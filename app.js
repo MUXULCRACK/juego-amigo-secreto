@@ -35,14 +35,25 @@ function actualizarLista() {
     });
 }
 
-function generarAmigoSecreto() {
-    if (listaAmigos.length === 0) {
-        alert("No hay amigos para generar un secreto");
+function sortearAmigo() {
+    if (listaAmigos.length < 2) {
+        alert("No hay amigos para generar un amigo secreto");
         return;
     }else{
+
         let amigoSecreto = listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
-        
+        mostrarResultado(amigoSecreto);
+
     }
+}
+
+function mostrarResultado(amigomostrar){
+    let ul = document.getElementById("resultado");
+    ul.innerHTML = ""; // Limpiar la lista antes de mostrar el nuevo resultado
+
+    let li = document.createElement("li");
+    li.textContent = `🎉 El amigo secreto es: ${amigo}`;
+    ul.appendChild(li);
 }
 //limpia el cuadro cada vez que vas a agregar un nuevo nombre con el botono añadir
 function limpiarCaja(){
