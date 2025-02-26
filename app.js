@@ -52,7 +52,7 @@ function mostrarResultado(amigomostrar){
     ul.innerHTML = ""; // Limpiar la lista antes de mostrar el nuevo resultado
 
     let li = document.createElement("li");
-    li.textContent = `🎉 El amigo secreto es: ${amigo}`;
+    li.textContent = `🎉 El amigo secreto es: ${amigomostrar}`;
     ul.appendChild(li);
 }
 //limpia el cuadro cada vez que vas a agregar un nuevo nombre con el botono añadir
