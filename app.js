@@ -54,6 +54,8 @@ function mostrarResultado(amigomostrar){
     let li = document.createElement("li");
     li.textContent = `🎉 El amigo secreto es: ${amigomostrar}`;
     ul.appendChild(li);
+    let al = document.getElementById("listaAmigos");
+    al.innerHTML = ""; 
 }
 //limpia el cuadro cada vez que vas a agregar un nuevo nombre con el botono añadir
 function limpiarCaja(){
