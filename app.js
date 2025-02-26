@@ -35,6 +35,15 @@ function actualizarLista() {
     });
 }
 
+function generarAmigoSecreto() {
+    if (listaAmigos.length === 0) {
+        alert("No hay amigos para generar un secreto");
+        return;
+    }else{
+        let amigoSecreto = listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
+        
+    }
+}
 //limpia el cuadro cada vez que vas a agregar un nuevo nombre con el botono añadir
 function limpiarCaja(){
     document.querySelector('#amigo').value='';
